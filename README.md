@@ -126,14 +126,19 @@ LIF Sensor	Microplastics detection	25
 
 ⚙️ Functionality
 Reads real-time data from sensors.
+
 Normalizes readings to a 0–100 scale.
+
 Calculates individual scores for each parameter.
+
 Combines scores into a final Marine Health Index (MHI).
 
 Detects:
 
 Oil spills
+
 Microplastics
+
 Displays readable output in the serial monitor.
 
 STEPS:
