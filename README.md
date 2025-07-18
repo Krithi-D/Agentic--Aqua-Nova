@@ -93,7 +93,9 @@ python anomaly_detector.py
 4. Open the dashboard
 Open src/dashboard/index.html in your browser.
 
- Project Overview
+ HARDWARE SIMULATION 
+
+ 
 🎯 Objective
 To continuously monitor marine parameters and provide a Marine Health Index using real-time data from various sensors, aiding in early detection of water pollution and ecological threats.
 
