@@ -93,6 +93,102 @@ python anomaly_detector.py
 4. Open the dashboard
 Open src/dashboard/index.html in your browser.
 
+ Project Overview
+🎯 Objective
+To continuously monitor marine parameters and provide a Marine Health Index using real-time data from various sensors, aiding in early detection of water pollution and ecological threats.
+
+📍 Platform
+Wokwi Simulator
+
+ESP32 Microcontroller
+
+🧰 Hardware Components (Simulated)
+Sensor	Function	ESP32 Pin
+DHT22	Temperature & Humidity	15
+Potentiometer (x6)	Simulated analog sensors	25–36
+Turbidity Sensor	Water clarity	34
+Salinity Sensor	Salt content (simulated)	36
+pH Sensor	Acidity/alkalinity level	35
+DO Sensor	Dissolved Oxygen	34
+Oil Density Sensor	Oil spill detection	32
+LIF Sensor	Microplastics detection	25
+
+📊 Parameters Monitored
+🌡 Temperature
+
+🧂 Salinity
+
+🌫 Turbidity
+
+🧪 pH Level
+
+🫧 Dissolved Oxygen (DO)
+
+🛢 Oil Density
+
+♻️ LIF Sensor (Microplastics)
+
+⚙️ Functionality
+Reads real-time data from sensors.
+
+Normalizes readings to a 0–100 scale.
+
+Calculates individual scores for each parameter.
+
+Combines scores into a final Marine Health Index (MHI).
+
+Detects:
+
+Oil spills
+
+Microplastics
+
+Displays readable output in the serial monitor.
+
+🔁 Normalization Logic
+cpp
+Copy
+Edit
+float normalize(int val, int in_min, int in_max) {
+  return constrain((float)(val - in_min) / (in_max - in_min) * 100.0, 0, 100);
+}
+Each sensor value is normalized to ensure equal weighting in the final MHI calculation.
+
+📦 Project Files
+sketch.ino - Main Arduino code.
+
+diagram.json - Wokwi simulation wiring.
+
+libraries.txt - List of required libraries.
+
+README.md - Project documentation.
+
+🧪 Sample Output (Serial Monitor)
+yaml
+Copy
+Edit
+Turbidity: 1001 | Score: 75.6
+Dissolved O2: 0 | Score: 0.0
+pH: 0 | Score: 0.0
+Oil Spill Detected: NO
+Microplastics Detected: NO
+🌊 Marine Health Index: 45.8 / 100
+📈 Future Improvements
+Cloud integration (e.g., ThingsBoard, Firebase).
+
+SMS/email alerts for anomaly detection.
+
+Solar charging simulation.
+
+Real GPS coordinates via a map.
+
+👩‍💻 Developed Using
+Language: C++ (Arduino)
+
+Simulator: Wokwi IoT & MCU Simulator
+
+Microcontroller: ESP32 Dev Board
+
 -------------------------------------------------------------------------------------------------------------------------
 ## 🔍 Aqua Nova – ML Model for Anomaly Detection & Prediction
 <img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/09569dce-bf86-45e7-8d94-592af6b581a5" />
@@ -238,3 +334,6 @@ NGOs, 	Clean water campaigns & reporting
 -Paid API access to real-time forecasts
 -Subscription plans for research or fisheries
 -Hardware kits (buoy + LoRa + sensors)
+
+
+
