@@ -1,4 +1,4 @@
-# Agentic--Aqua-Nova
+# MatysaN-Aqua-Nova
 # Smart Marine Health Monitoring Using AI-Enabled Buoy System  
 **Team Name:** Aqua Nova  
 **Team Members** 
@@ -198,6 +198,9 @@ This tool is useful for:
 Fisheries: Healthier yield, early pollution alerts
 Govt Authorities, Environmental monitoring, quick response
 Researchers'	Long-term marine studies & pollution data
+
+<img width="1920" height="897" alt="anamoly detection" src="https://github.com/user-attachments/assets/e75f61df-ae58-440c-aefc-856475a33397" />
+
 NGOs, 	Clean water campaigns & reporting
 
 ## Revenue Stream:
