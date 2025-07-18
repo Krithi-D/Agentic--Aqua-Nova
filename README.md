@@ -34,6 +34,8 @@ Weather data like rainfall, sunlight, and wind can be added from open APIs like 
 
 Geo-fencing helps set up alert zones (restricted or high-risk areas)
 
+![WhatsApp Image 2025-07-18 at 09 34 54_173c5447](https://github.com/user-attachments/assets/abfb9356-2c2d-428a-8e68-861fb89c7028)
+
 How the Buoy Communicates
 The buoy is assumed to be fitted with multi-parameter sensors
 
@@ -50,6 +52,7 @@ The system:
 - Shows everything on a live dashboard  
 - Sends alerts when environmental thresholds are crossed
 
+![WhatsApp Image 2025-07-18 at 09 35 30_6f35da2e](https://github.com/user-attachments/assets/73e51806-72de-40cf-90b9-f69215510862)
 
 🔄 Sensing + Data Processing
 Data collected: Temperature, pH, Turbidity, Sulfate, Dissolved Oxygen, etc.
@@ -57,6 +60,8 @@ Data collected: Temperature, pH, Turbidity, Sulfate, Dissolved Oxygen, etc.
 Total: ~4000+ rows of data used for training and testing
 
 Not real-time for now – data used is from public datasets (like Kaggle) to simulate
+![WhatsApp Image 2025-07-18 at 09 34 26_6d292c18](https://github.com/user-attachments/assets/f392778d-49e6-42ed-b7fa-c8e26955ea89)
+
 ---
 
 ## 🧰 Tech Stack Used  
@@ -90,6 +95,8 @@ Open src/dashboard/index.html in your browser.
 
 -------------------------------------------------------------------------------------------------------------------------
 ## 🔍 Aqua Nova – ML Model for Anomaly Detection & Prediction
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/09569dce-bf86-45e7-8d94-592af6b581a5" />
+
 -The goal of this ML model is to detect anomalies in water parameters like pH, turbidity, and sulfate, and to predict future temperature and dissolved oxygen levels using simple linear regression. 
 -It focuses on detecting harmful changes in water quality using machine learning and forecasting future conditions to support early warning systems for coastal authorities, fisheries, and researchers.
 
@@ -199,6 +206,8 @@ When an anomaly or dangerous forecast is detected:
 -Instant alert can be sent to fishers, researchers, or Coast Guard
 -Format: Email, SMS, or push notification
 -Alerts are location-aware and tagged with sensor timestamp
+![WhatsApp Image 2025-07-18 at 09 33 55_4b02deb2](https://github.com/user-attachments/assets/a1ad7a8c-4459-4537-b08b-0472eed3c9e0)
+
 
 ## 🧪 Sample Use Cases
 -Predict algal blooms, oxygen depletion, or thermal pollution
