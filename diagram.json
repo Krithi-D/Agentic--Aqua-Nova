@@ -1,0 +1,101 @@
+{
+  "version": 1,
+  "author": "Anonymous maker",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 76.8, "left": -100.76, "attrs": {} },
+    { "type": "wokwi-dht22", "id": "dht1", "top": -66.9, "left": -264.6, "attrs": {} },
+    { "type": "wokwi-potentiometer", "id": "pot1", "top": -58.9, "left": -192.2, "attrs": {} },
+    { "type": "wokwi-photoresistor-sensor", "id": "ldr1", "top": -64, "left": 29.6, "attrs": {} },
+    { "type": "wokwi-potentiometer", "id": "pot3", "top": 161.9, "left": -480.2, "attrs": {} },
+    { "type": "wokwi-potentiometer", "id": "pot4", "top": 277.1, "left": -470.6, "attrs": {} },
+    { "type": "wokwi-potentiometer", "id": "pot5", "top": 257.9, "left": 259, "attrs": {} },
+    { "type": "wokwi-potentiometer", "id": "pot6", "top": 133.1, "left": 191.8, "attrs": {} },
+    { "type": "wokwi-potentiometer", "id": "pot2", "top": -30.1, "left": -489.8, "attrs": {} },
+    {
+      "type": "wokwi-text",
+      "id": "text1",
+      "top": -76.8,
+      "left": -508.8,
+      "attrs": { "text": "Salinity sensor" }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "text2",
+      "top": 182.4,
+      "left": -576,
+      "attrs": { "text": "PH sensor" }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "text3",
+      "top": 364.8,
+      "left": -576,
+      "attrs": { "text": "Viscosity Sensor" }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "text4",
+      "top": -144,
+      "left": -307.2,
+      "attrs": { "text": "Temperature\nSensor" }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "text5",
+      "top": -134.4,
+      "left": -192,
+      "attrs": { "text": "Oxygen Sensor" }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "text6",
+      "top": -57.6,
+      "left": 240,
+      "attrs": { "text": "Turbidity Sensor" }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "text7",
+      "top": 278.4,
+      "left": 345.6,
+      "attrs": { "text": "LIF Sensor" }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "text8",
+      "top": 144,
+      "left": 297.6,
+      "attrs": { "text": "Oil Density Sensor" }
+    }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "dht1:VCC", "esp:3V3", "red", [ "v0" ] ],
+    [ "dht1:GND", "esp:GND.2", "black", [ "h278.4", "v57.6" ] ],
+    [ "esp:15", "dht1:SDA", "green", [ "h38.4", "v-192", "h-278.5" ] ],
+    [ "esp:34", "pot1:SIG", "green", [ "h-57.45", "v-134.4" ] ],
+    [ "pot1:GND", "esp:GND.1", "black", [ "v48", "h76.65" ] ],
+    [ "esp:35", "pot3:SIG", "green", [ "h-191.85", "v105.6", "h-153.2" ] ],
+    [ "esp:32", "pot4:SIG", "green", [ "h-134.25", "v201.6" ] ],
+    [ "esp:33", "pot6:SIG", "green", [ "h-105.45", "v153.6", "h403.2" ] ],
+    [ "pot5:SIG", "esp:25", "green", [ "v28.8", "h-442", "v-163.2" ] ],
+    [ "pot3:VCC", "esp:3V3", "red", [ "v9.6", "h56.8", "v-134.4" ] ],
+    [ "pot4:VCC", "esp:3V3", "red", [ "v28.8", "h66.4", "v-259.2" ] ],
+    [ "pot6:VCC", "esp:3V3", "red", [ "v172.8", "h-509.6", "v-268.8", "h19.2" ] ],
+    [ "pot5:VCC", "esp:3V3", "red", [ "v28.8", "h-567.2", "v-249.6" ] ],
+    [ "pot1:VCC", "esp:3V3", "red", [ "v0" ] ],
+    [ "pot3:GND", "esp:GND.1", "black", [ "v0" ] ],
+    [ "pot4:GND", "esp:GND.1", "black", [ "v48", "h134.4", "v-163.2" ] ],
+    [ "pot6:GND", "esp:GND.2", "black", [ "h-96", "v-96" ] ],
+    [ "pot5:GND", "esp:GND.2", "black", [ "v19.2", "h-259.2", "v-240" ] ],
+    [ "pot2:SIG", "esp:VP", "green", [ "v0" ] ],
+    [ "pot2:VCC", "esp:3V3", "red", [ "v0" ] ],
+    [ "pot2:GND", "esp:GND.1", "black", [ "v105.6", "h163.2", "v86.4", "h172.8" ] ],
+    [ "esp:VN", "ldr1:AO", "green", [ "h-28.65", "v-105.6", "h345.6", "v-9.6" ] ],
+    [ "ldr1:VCC", "esp:3V3", "red", [ "h19.2", "v-38.4", "h-508.8", "v192" ] ],
+    [ "ldr1:GND", "esp:GND.2", "black", [ "h-105.6", "v191.6" ] ]
+  ],
+  "dependencies": {}
+}
