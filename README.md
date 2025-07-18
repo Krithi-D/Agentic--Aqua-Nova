@@ -124,7 +124,8 @@ LIF Sensor	Microplastics detection	25
 🛢 Oil Density
 ♻️ LIF Sensor (Microplastics)
 
-⚙️ Functionality
+⚙️ Functionality:
+
 Reads real-time data from sensors.
 
 Normalizes readings to a 0–100 scale.
@@ -204,6 +205,8 @@ pH: 0 | Score: 0.0
 Oil Spill Detected: NO
 Microplastics Detected: NO
 🌊 Marine Health Index: 45.8 / 100
+
+
 📈 Future Improvements
 Cloud integration (e.g., ThingsBoard, Firebase).
 
