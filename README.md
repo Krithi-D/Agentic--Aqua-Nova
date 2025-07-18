@@ -172,6 +172,12 @@ Anomaly points (normal vs abnormal)
 Line chart of actual vs predicted temperature and oxygen
 Output is also saved in CSV for further processing or dashboard integration
 
+<img width="1920" height="897" alt="anamoly detection" src="https://github.com/user-attachments/assets/e75f61df-ae58-440c-aefc-856475a33397" />
+
+<img width="1920" height="898" alt="oxygen prediction" src="https://github.com/user-attachments/assets/b52809a8-4a2b-4cf1-b2ba-fa015d243d23" />
+
+<img width="1920" height="898" alt="temperature prediction" src="https://github.com/user-attachments/assets/3d5aeab3-ba15-4048-b776-c547fb5d2f93" />
+
 ## 🚨 Alert System
 When an anomaly or dangerous forecast is detected:
 -Instant alert can be sent to fishers, researchers, or Coast Guard
@@ -199,7 +205,6 @@ Fisheries: Healthier yield, early pollution alerts
 Govt Authorities, Environmental monitoring, quick response
 Researchers'	Long-term marine studies & pollution data
 
-<img width="1920" height="897" alt="anamoly detection" src="https://github.com/user-attachments/assets/e75f61df-ae58-440c-aefc-856475a33397" />
 
 NGOs, 	Clean water campaigns & reporting
 
