@@ -155,6 +155,8 @@ Upload via Files > Upload in Colab
 -Run all cells from top to bottom
 
 -The first part trains the model
+<img width="679" height="264" alt="image" src="https://github.com/user-attachments/assets/500a4ad9-e8ba-4bf3-81d1-18c563de49be" />
+
 -Then it predicts anomalies or future values
  Predicts the next 5 values for Turbidity
  <img width="1459" height="416" alt="image" src="https://github.com/user-attachments/assets/4050f3ed-7f6e-45f6-8bfc-2919df8d6ff3" />
