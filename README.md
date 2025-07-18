@@ -96,15 +96,15 @@ Open src/dashboard/index.html in your browser.
  HARDWARE SIMULATION 
 
  
-🎯 Objective
+🎯 Objective:
 To continuously monitor marine parameters and provide a Marine Health Index using real-time data from various sensors, aiding in early detection of water pollution and ecological threats.
 
-📍 Platform
+📍 Platform:
 Wokwi Simulator
 
 ESP32 Microcontroller
 
-🧰 Hardware Components (Simulated)
+🧰 Hardware Components (Simulated):
 Sensor	Function	ESP32 Pin
 DHT22	Temperature & Humidity	15
 Potentiometer (x6)	Simulated analog sensors	25–36
@@ -117,57 +117,40 @@ LIF Sensor	Microplastics detection	25
 
 📊 Parameters Monitored
 🌡 Temperature
-
 🧂 Salinity
-
 🌫 Turbidity
-
 🧪 pH Level
-
 🫧 Dissolved Oxygen (DO)
-
 🛢 Oil Density
-
 ♻️ LIF Sensor (Microplastics)
 
 ⚙️ Functionality
 Reads real-time data from sensors.
-
 Normalizes readings to a 0–100 scale.
-
 Calculates individual scores for each parameter.
-
 Combines scores into a final Marine Health Index (MHI).
 
 Detects:
 
 Oil spills
-
 Microplastics
-
 Displays readable output in the serial monitor.
 
 STEPS:
-Go to Wokwi Arduino Simulator
-Create a new project using the ESP32 Dev Board.
 
-Add Components:
+1.Go to Wokwi Arduino Simulator
+   Create a new project using the ESP32 Dev Board.
 
-Add an ESP32 Dev Module
+2.Add Components:
+   Add an ESP32 Dev Module
+   Add a DHT22 sensor
+   Add potentiometers (for salinity, pH, viscosity, oxygen, oil density, and LIF)
+   Add a turbidity sensor (can be simulated with another analog sensor or potentiometer)
 
-Add a DHT22 sensor
+3.Wire the Circuit:
 
-Add potentiometers (for salinity, pH, viscosity, oxygen, oil density, and LIF)
+     Connect all sensors to the ESP32:
 
-Add a turbidity sensor (can be simulated with another analog sensor or potentiometer)
-
-Wire the Circuit:
-
-Connect all sensors to the ESP32 as per the pin mapping:
-
-rust
-Copy
-Edit
 DHT22       -> GPIO15
 Salinity    -> GPIO36
 Turbidity   -> GPIO39
@@ -180,17 +163,13 @@ Use the analogRead() pins for potentiometers.
 
 Provide 3.3V or 5V and GND accordingly.
 
-Upload the Code:
+4.Upload the Code:
+    Copy the code from sketch.ino.
+    Paste it into Wokwi's code editor.
 
-Copy the code from sketch.ino (shown in the image).
-
-Paste it into Wokwi's code editor.
-
-Start Simulation:
-
-Click the green Start Simulation ▶️ button.
-
-Open the Serial Monitor to view readings.
+5.Start Simulation:
+    Click the green Start Simulation ▶️ button.
+    Open the Serial Monitor to view readings.
 
 🔁 Normalization Logic
 cpp
