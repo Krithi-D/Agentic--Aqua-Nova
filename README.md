@@ -368,5 +368,6 @@ NGOs, 	Clean water campaigns & reporting
 -Subscription plans for research or fisheries
 -Hardware kits (buoy + LoRa + sensors)
 
-
+## Youtube Link:
+https://www.youtube.com/watch?v=m3LX2YJkrmo
 
