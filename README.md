@@ -133,10 +133,10 @@ Aqua_Nova.ipynb      – Google Colab notebook for training Isolation Forest and
 forecast_results.csv – Sample output of predictions
 assets/              – Folder with charts and output visuals
 
-##📦 How to Run This on Your Device (Step-by-Step)
+## 📦 How to Run This on Your Device (Step-by-Step)
 -You can run this with no installation using Google Colab.
-##Run in Google Colab (Recommended)
-##Open the notebook:
+## Run in Google Colab (Recommended)
+## Open the notebook:
 Click on the .ipynb file (Aqua_Nova.ipynb)
 Click the "Open in Colab" button
 
@@ -144,12 +144,21 @@ Upload the dataset:
 -Download water_potability.csv (For the Anomaly Detection)
 -Download temp, oxygen data set.csv (For Predictive Analysis)
 
+<img width="1440" height="625" alt="image" src="https://github.com/user-attachments/assets/d3d785d9-64e6-4152-acf5-87c97792350a" />
+
+<img width="1349" height="648" alt="image" src="https://github.com/user-attachments/assets/5c469c53-6152-436b-9271-6543e880f777" />
+
+
+
 Upload via Files > Upload in Colab
 -Run the cells (Shift + Enter) one by one
 -Run all cells from top to bottom
 
 -The first part trains the model
 -Then it predicts anomalies or future values
+ Predicts the next 5 values for Turbidity
+ <img width="1459" height="416" alt="image" src="https://github.com/user-attachments/assets/4050f3ed-7f6e-45f6-8bfc-2919df8d6ff3" />
+
 -Final cells plot the graphs
 
 ## 🔬 How the Model Works
