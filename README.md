@@ -145,6 +145,51 @@ Microplastics
 
 Displays readable output in the serial monitor.
 
+STEPS:
+Go to Wokwi Arduino Simulator
+Create a new project using the ESP32 Dev Board.
+
+Add Components:
+
+Add an ESP32 Dev Module
+
+Add a DHT22 sensor
+
+Add potentiometers (for salinity, pH, viscosity, oxygen, oil density, and LIF)
+
+Add a turbidity sensor (can be simulated with another analog sensor or potentiometer)
+
+Wire the Circuit:
+
+Connect all sensors to the ESP32 as per the pin mapping:
+
+rust
+Copy
+Edit
+DHT22       -> GPIO15
+Salinity    -> GPIO36
+Turbidity   -> GPIO39
+Oxygen      -> GPIO34
+PH          -> GPIO35
+Viscosity   -> GPIO32
+Oil Density -> GPIO33
+LIF         -> GPIO25
+Use the analogRead() pins for potentiometers.
+
+Provide 3.3V or 5V and GND accordingly.
+
+Upload the Code:
+
+Copy the code from sketch.ino (shown in the image).
+
+Paste it into Wokwi's code editor.
+
+Start Simulation:
+
+Click the green Start Simulation ▶️ button.
+
+Open the Serial Monitor to view readings.
+
 🔁 Normalization Logic
 cpp
 Copy
