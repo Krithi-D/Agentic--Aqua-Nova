@@ -154,8 +154,7 @@ STEPS:
    Add a turbidity sensor (can be simulated with another analog sensor or potentiometer)
 
 3.Wire the Circuit:
-
-     Connect all sensors to the ESP32:
+     Connect the sensors to ESP32:
 
 DHT22       -> GPIO15
 Salinity    -> GPIO36
