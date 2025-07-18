@@ -142,7 +142,7 @@ Click the "Open in Colab" button
 
 Upload the dataset:
 -Download water_potability.csv (For the Anomaly Detection)
--Download temp, oxygen data set.csv (For Predictive Analysis)
+
 
 <img width="1440" height="625" alt="image" src="https://github.com/user-attachments/assets/d3d785d9-64e6-4152-acf5-87c97792350a" />
 
@@ -159,6 +159,9 @@ Upload via Files > Upload in Colab
  Predicts the next 5 values for Turbidity
  <img width="1459" height="416" alt="image" src="https://github.com/user-attachments/assets/4050f3ed-7f6e-45f6-8bfc-2919df8d6ff3" />
 
+-Download temp, oxygen data set.csv (For Predictive Analysis):
+<img width="1048" height="552" alt="image" src="https://github.com/user-attachments/assets/21bb64e5-c78e-48ab-898c-0fff70bb13d6" />
+
 -Final cells plot the graphs
 
 ## 🔬 How the Model Works
@@ -168,6 +171,8 @@ The model learns normal patterns from the data
 Then it flags abnormal water conditions (e.g., toxic spills, chemical spikes)
 
 2. Prediction using Linear Regression
+   <img width="609" height="566" alt="image" src="https://github.com/user-attachments/assets/ff69017e-3f08-4375-a285-49ea480da9d8" />
+
 Input: time in minutes
 Output: predicted temperature (°C) and dissolved oxygen (mg/L)
 The model fits a straight line to historical data and forecasts future trends
